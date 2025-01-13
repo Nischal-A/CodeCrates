@@ -86,59 +86,6 @@ header.scrolled nav ul li a {
   z-index: -1;
 }
 
-/* Glitch Effect */
-.glitch {
-  font-size: 60px;
-  font-weight: bold;
-  position: relative;
-  color: #fff;
-  animation: glitch-animation 2s infinite;
-}
-
-.glitch::before,
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #ff0000;
-  z-index: -1;
-  clip: rect(0, 900px, 0, 0);
-}
-
-.glitch::after {
-  color: #00ff00;
-  z-index: -2;
-}
-
-@keyframes glitch-animation {
-  0% {
-    clip: rect(0, 900px, 0, 0);
-    transform: translate(0, 0);
-  }
-  20% {
-    clip: rect(10px, 900px, 30px, 0);
-    transform: translate(-5px, -5px);
-  }
-  40% {
-    clip: rect(20px, 900px, 50px, 0);
-    transform: translate(5px, 5px);
-  }
-  60% {
-    clip: rect(10px, 900px, 40px, 0);
-    transform: translate(-5px, 5px);
-  }
-  80% {
-    clip: rect(30px, 900px, 10px, 0);
-    transform: translate(5px, -5px);
-  }
-  100% {
-    clip: rect(0, 900px, 0, 0);
-    transform: translate(0, 0);
-  }
-}
-
 /* Typewriter Effect */
 .typewriter {
   font-size: 18px;
@@ -166,6 +113,12 @@ header.scrolled nav ul li a {
   50% {
     border-color: #fff;
   }
+}
+
+/* Remove cursor after typing */
+.typewriter.done {
+  border-right: none;
+  animation: none;
 }
 
 /* About Section */
