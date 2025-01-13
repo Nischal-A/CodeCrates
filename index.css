@@ -90,6 +90,7 @@ header.scrolled nav ul li a {
 .typewriter {
   font-size: 18px;
   overflow: hidden;
+  color: #fff; 
   border-right: 2px solid #fff;
   white-space: nowrap;
   margin: 20px auto 0;
