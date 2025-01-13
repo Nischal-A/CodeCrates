@@ -85,7 +85,11 @@ header.scrolled nav ul li a {
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
-
+.hero h1 {
+  font-size: 80px; /* Adjust the size to fit your design */
+  color: #fff; /* White color */
+  text-align: center;
+}
 /* Typewriter Effect */
 .typewriter {
   font-size: 18px;
